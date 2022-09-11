@@ -1,0 +1,10 @@
+services:
+  app:
+    platform: "linux/amd64"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /dotdev/app
+    ports:
+      - "3000:3000"
+    image: dotdev
