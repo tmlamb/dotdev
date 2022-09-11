@@ -19,5 +19,5 @@ jobs:
       - name: Build and publish image
         run: |
           docker build . --file Dockerfile --tag ghcr.io/tmlamb/dotdev:latest --tag ghcr.io/tmlamb/dotdev:${{ github.sha }}
-          docker push ghcr.io/tmlamb/dotdev:${{ github.sha }}
+          docker push --all-tags ghcr.io/tmlamb/dotdev
 
