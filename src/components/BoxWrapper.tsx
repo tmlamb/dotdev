@@ -28,7 +28,7 @@ function Sphere(props: ThreeElements["mesh"]) {
 }
 
 // createRoot(document.getElementById("root") as HTMLElement).render(
-export default function BoxWrapper() {
+export default function SphereWrapper() {
   return (
     <Canvas>
       <ambientLight />
